@@ -1,0 +1,294 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.search-wrapper {
+		max-width: 400px;
+	}
+	
+	.search-wrapper>input[type = "text"] {
+		max-width: 340px;
+	}
+
+	.search-bar p	{
+		padding-left: 30px;
+	}
+	
+	.search-bar .yellow-btn {
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	
+	.login-bar .login-bar-left {
+		padding-left: 20px;		
+	}
+	
+	.login-bar .login-bar-right {
+		padding-left: 20px;
+	}
+	
+	.login-bar .separate-image {
+		display: none;
+	}
+
+	.center-one .center-one-left>img {
+		width: 100%;
+		height: 100%;
+		margin-top: 83px;
+	}	
+	
+	.center-one .center-one-center>h3 {
+		margin-top: 50px;
+		font-size: 20px;
+	}	
+
+	.center-one .center-one-center>h1 {
+		margin-top: 15px;
+		font-size: 43px;
+	}
+	
+	.center-one .center-one-right>h4 {
+		text-align: right;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.center-one .center-one-left>img {
+		display: none;
+	}	
+	
+	.login-bar .login-bar-right {
+		border-left: none;
+		border-top: 2px solid #ADD8BC;
+		margin-bottom: 20px;
+		padding-bottom: 30px;
+	}
+	
+	.center-one .center-one-right>img {
+		display: none;
+	}
+	
+	.login-bar-left>h3 {
+		padding-top: 20px;
+	}
+	
+	.center-one .center-one-right>h4 {
+		float: none;
+		text-align: center;
+	}
+	
+	.center-one .center-one-right>h4:first-of-type {
+		margin-top: 30px;
+	}
+	
+	.center-one .center-one-right>h4:last-of-type {
+		margin-bottom: 25px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {	
+
+}
+
+@media only screen and (max-width : 600px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {	
+	.search-bar {
+		text-align: center;
+	}	
+
+	.search-bar>p {	
+		padding-left: 10px;
+		padding-right: 10px;	
+
+	}
+
+	.search-bar>.yellow-btn {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		margin-top: 25px;
+	}
+		
+	.search-wrapper {
+		max-width: 235px;
+	}
+
+	.search-wrapper>input[type = "text"] {
+		max-width: 170px;
+	}
+
+	.social-btn-wrapper>p {
+		margin-left: 10%;
+		margin-right: 20%;
+		padding: 5px;
+	}
+
+	.social-btn-wrapper>.fb {
+		margin-left: 30%;
+	}
+
+	.login-bar-left>h3 {
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.login-bar .login-bar-left {
+		padding-left: 0;
+	}
+
+	.login-bar-left>form {
+		text-align: center;
+	}
+
+	.login-bar input[type="checkbox"] {
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+
+	.login-bar p {
+		margin-top: 11px;
+	}
+
+	.login-bar .yellow-btn-sign {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.pass-remind {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.login-bar .separate-image {
+		display: block;
+		top: 21px;
+		left: 45%;
+	}
+
+	.login-bar .login-bar-right {
+		border-left: none;
+		border-top: 2px solid #ADD8BC;
+		margin-bottom: 20px;
+		padding-left: 0;
+		padding-bottom: 0;
+	}
+
+	.login-bar .login-bar-right form {
+		text-align: center;
+	}
+
+	.login-bar-right>h3 {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.login-bar-right>form>input {
+		margin-left: auto;
+	}
+
+	.login-bar .login-bar-right .yellow-btn-sign {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.center-one .center-one-left>img {
+		display: none;
+	}
+
+	.center-one .center-one-center>h3 {
+		margin-top: 25px;
+	} 
+
+	.center-one .center-one-center>h1 {
+		margin-top: 15px;
+		font-size: 48px;
+	}
+
+	.center-one .center-one-center input[type = "button"]:first-of-type {
+		display: inline-block;
+		margin-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.center-one .center-one-center input[type = "button"]:last-of-type {
+		display: inline-block;
+		margin-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.center-one .center-one-right {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	.center-one .center-one-right>h4 {
+		float: none;
+		text-align: center;
+	}
+
+	.center-one .center-one-right>img {
+		display: none;
+	}
+
+	.center-second-center .comment-wrapper input[type="text"] {
+		width: 90%;
+	}
+
+	footer {
+		min-height: 380px;
+		text-align: center;
+	}
+
+	footer>img {
+		margin-top: 42px;
+	}
+
+	footer h2 {
+		margin-top: 20px;
+	}
+
+	footer a {
+		font-size: 22px;
+	}
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+ /* Custom Wide Screens */
+@media (min-height : 720px) and (min-width : 1400px) {
+
+}

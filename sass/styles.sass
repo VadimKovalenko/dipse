@@ -1,0 +1,365 @@
+﻿$white-color: #fff
+$green-color: #019245
+$yellow-color: #fdee21
+$grey-color: #cec9c3
+
+@mixin main-gradient($args...)
+	background-image: -o-linear-gradient($args)
+	background-image: -moz-linear-gradient($args)
+	background-image: -webkit-linear-gradient($args)
+	background-image: linear-gradient($args)
+
+.lang
+	float: right
+	color: $green-color
+	line-height: 54px
+	cursor: pointer
+	
+.top
+	width: 100%
+	min-height: 445px
+	@include main-gradient(90deg, #019245, #24bb52, #019245)
+	border-bottom: 2px solid $white-color
+	color: $white-color
+	h1
+		margin-top: 15px
+		margin-bottom: 10px
+	h2
+		font-size: 22px
+		margin-top: 10px
+
+.search-bar
+	min-height: 300px
+	@include main-gradient(90deg, #22a15e, #43c669)
+	p
+		padding-top: 28px
+		padding-left: 68px
+		padding-bottom: 10px
+	.rusad
+		color: #2f3a32
+	.search-wrapper
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		width: 520px
+		height: 42px
+		@include main-gradient(90deg, #019245, #24bb52, #019245)
+		-webkit-box-shadow: 0 0 3px black
+		-moz-box-shadow: 0 0 3px black
+		box-shadow: 0 0 3px black
+		input[type = "text"]
+			/*Fix the Chrome issue*/
+			-webkit-box-sizing: border-box
+			-moz-box-sizing: border-box
+			-box-sizing: border-box
+			box-sizing: border-box
+			float: left
+			margin-top: 2px
+			margin-left: 2px
+			color: black
+			width: 458px
+			height: 38px	
+		.search-btn
+			width: 57px
+			height: 38px
+			background-image: url(../img/search_button.png)
+			-webkit-background-size: cover
+			background-size: cover
+			border: 1px solid #807e83
+			margin-left: -3px
+			margin-top: 2px
+	.yellow-btn
+		background-color: $yellow-color
+		color: black
+		-webkit-border-radius: 22px
+		-moz-border-radius: 22px
+		border-radius: 22px
+		border: none
+		font-weight: bold
+		font-size: 22px
+		padding: 6px 22px 6px 22px
+		margin-top: 60px
+		margin-left: 68px
+	.social-btn-wrapper
+		margin-top: 28px
+		p
+			float: left
+			font-size: 18px
+			padding-top: 0px
+			margin-right: 13px
+		.social-btn
+			height: 28px
+			width: 29px
+			float: left
+		.fb
+			background: url(../img/dipse_social.png) 0px 0px
+		.odnokl
+			background: url(../img/dipse_social.png) 29px 0px
+		.vk
+			background: url(../img/dipse_social.png) 59px 0px
+		.twit
+			background: url(../img/dipse_social.png) 88px 0px	
+
+.top-right
+		h1, h2
+			text-align: right
+	
+.login-bar
+	.col-md-6
+		padding: 0
+	min-height: 300px
+	@include main-gradient(90deg, #43c669, #22a15e)
+	.login-bar-left
+		padding-left: 40px
+	input
+		margin-top: 10px
+	input[type = "text"], input[type = "button"], input[type = "password"]
+		width: 190px
+	input[type = "button"]
+		height: 31px
+		-webkit-border-radius: 15px
+		-moz-border-radius: 15px
+		border-radius: 15px
+		border: none
+	input[type = "text"], input[type = "password"]
+		-webkit-border-radius: 3px
+		-moz-border-radius: 3px
+		border-radius: 3px
+		color: black
+		border: none
+	.fb-btn
+		background-color: #03468d
+		background-image: url(../img/fb_social.png)
+		background-repeat: no-repeat
+		background-position: 12px 0;
+	.vk-btn
+		background-color: #314b66
+		background-image: url(../img/vk_social.png)
+		background-repeat: no-repeat
+		background-position: 12px 0;
+	input[type = "checkbox"]
+		float: left
+		margin-top: 10px
+		margin-right: 13px
+	p
+		padding-top: 5px
+		margin-bottom: 5px
+		color: #2f3a32
+	.yellow-btn-sign
+		background-color: $yellow-color
+		color: black
+		font-size: 16px
+		font-weight: bold
+		padding-top: 5px
+		padding-bottom: 5px
+		border: none
+		width: 166px
+		-webkit-border-radius: 15px
+		-moz-border-radius: 15px
+		border-radius: 15px
+		margin-left: 12px
+		margin-top: 0
+		margin-bottom: 5px
+	.pass-remind
+		text-align: center
+		padding-top: 2px
+	.separate-image	
+		width: 38px
+		height: 38px
+		background-image: url(../img/dipse_or.png)
+		-webkit-background-size: cover
+		background-size: cover
+		position: relative
+		top: -171px
+		left: 92%
+		z-index: 10
+	.login-bar-right
+		border-left: 2px solid #add8bc
+		padding-left: 40px
+		input[type = "text"], input[type = "password"] 
+			margin-bottom: 6px
+			&:first-child
+				margin-top: 20px
+		.yellow-btn-sign
+			margin-top: 12px
+		
+
+.center-one
+	min-height: 250px
+	color: $grey-color
+	background-image: url(../img/dipse_coffee_bg.png)
+	-webkit-background-size: cover
+	background-size: cover
+	img
+		margin-top: 33px
+	.center-one-center
+		text-align: center
+		h3
+			margin-top: 40px
+		h1
+			text-transform: uppercase
+			font-size: 58px
+			margin-top: 10px
+			margin-bottom: 20px
+		input[type = "button"]
+			width: 150px
+			border: none
+			font-size: 16px
+			font-weight: bold
+			padding-top: 5px
+			padding-bottom: 5px
+			-webkit-border-radius: 15px
+			-moz-border-radius: 15px
+			border-radius: 15px
+			&:first-of-type
+				background-color: $green-color
+				margin-right: 18px
+			&:nth-of-type(2)
+				background-color: $grey-color
+				color: black
+				margin-left: 18px
+	.center-one-right
+		img, h4
+			float: right
+			margin-bottom: 15px
+		h4
+			margin-bottom: 5px
+			margin-top: 2px
+			text-transform: uppercase
+
+.center-second
+	min-height: 412px
+	background-color: #efefef
+
+.center-second-left
+		min-height: 390px
+		margin-top: 20px
+		.demga
+			h3
+				padding-top: 10px
+			input[type="text"]
+				margin-bottom: 13px
+	
+.center-second-left, .center-second-center, .center-second-right
+	background-color: $white-color
+	
+.center-second .col-md-2, .center-second .col-md-7, .center-second .col-md-3
+	padding-left: 4px
+	padding-right: 4px	
+	margin-bottom: 10px
+	
+.demga
+	height: 115px;
+	@include main-gradient(90deg, #019245, #24bb52, #019245)
+	text-align: center
+	h3
+		text-transform: uppercase
+		color: $white-color
+		
+.demga-button
+	border: none
+	-webkit-border-radius: 9px
+	-moz-border-radius: 9px
+	border-radius: 9px
+	background-color: #006837
+	color: $white-color
+
+.members
+	text-align: center
+	h3
+		color: $green-color
+		margin-top: 15px
+	.user
+		display: inline-block
+		width: 51px
+		height: 51px
+		background-image: url(../img/dipse_user.png)
+		-webkit-background-size: cover
+		background-size: cover
+
+.center-second-center
+	min-height: 390px
+	h3
+		color: $green-color
+		padding-top: 16px
+		padding-left: 16px
+	.comment-wrapper
+		margin-bottom: 35px
+		margin-left: 33px
+		.user-img
+			float: left
+			margin-right: 20px
+		.link-word
+			text-decoration: none
+		.comment-actions
+			float: left
+			margin-right: 35px
+		input[type = "text"]
+			width: 312px
+			margin-right: 20px
+
+.center-second-right
+	text-align: center
+	min-height: 390px
+	h3
+		color: $green-color
+		padding-top: 16px
+		margin-left: -36px
+		margin-bottom: 0
+	img
+		position: relative
+		top: -22px
+		left: 105px
+		width: 24px
+		height: 19px
+	hr	
+		border: 2px solid #dadada
+		margin: 0
+	.sound-sample
+		margin-left: auto
+		margin-right: auto
+		margin-top: 14px
+		margin-bottom: 14px
+		width: 190px
+		height: 65px
+		border: 1px solid #999
+		-webkit-border-radius: 7px
+		-moz-border-radius: 7px
+		border-radius: 7px
+		.first-word
+			font-size: 65px
+			color: $green-color
+			line-height: 70px
+			padding-left: 2px
+		.transcript
+			position: relative
+			bottom: 10px
+			margin-left: 5px
+			margin-right: 5px
+			font-size: 42px
+			color: #656565
+		img
+			position: relative
+			left: 2px
+			top: -22px
+			width: 42px
+			height: 34px
+	input[type = "button"]
+		position: relative
+		border: none
+		background-color: $green-color
+		color: $white-color
+		padding: 6px 19px 6px 19px
+		-webkit-border-radius: 15px
+		-moz-border-radius: 15px
+		border-radius: 15px
+		margin: 0 auto
+
+footer
+	@include main-gradient(90deg, #019245, #24bb52, #019245)
+	min-height: 137px
+	a, h2
+		margin-top: 30px
+		color: white
+	img
+		margin-top: 50px
